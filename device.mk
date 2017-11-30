@@ -16,6 +16,9 @@
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += device/google/molly/overlay-aosp
 
+# Device Type
+PRODUCT_CHARACTERISTICS := tablet,nosdcard
+
 # DPI
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=240
