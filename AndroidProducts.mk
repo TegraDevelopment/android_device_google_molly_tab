@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_molly.mk
+    device/google/molly/aosp_molly.mk
