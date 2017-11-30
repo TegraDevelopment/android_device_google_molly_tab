@@ -32,4 +32,10 @@ TARGET_VENDOR_DEVICE_NAME := molly
 
 TARGET_VENDOR := google
 
+# Device Fingerprint
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=molly \
+    BUILD_FINGERPRINT=google/molly/molly:5.0.2/LRX22G/1649326:user/release-keys \
+    PRIVATE_BUILD_DESC="molly-user 5.0.2 LRX22G 1649326 release-keys"
+
 $(call inherit-product-if-exists, vendor/google/molly/molly-vendor.mk)
