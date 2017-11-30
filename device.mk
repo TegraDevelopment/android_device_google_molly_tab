@@ -16,5 +16,9 @@
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += device/google/molly/overlay-aosp
 
+# DPI
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sf.lcd_density=240
+
 # Inherit from molly-common
 $(call inherit-product, device/google/molly-common/device.mk)
